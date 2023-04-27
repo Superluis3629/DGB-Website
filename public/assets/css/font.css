@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Calibre-0P3z';
+    src: url(DGBFont/Calibre-0P3z.ttf);
+}
+
+@font-face {
+    font-family: 'Black';
+    src: url(DGBFont/Calibre-Black.ttf);
+}
+
+@font-face {
+    font-family: 'BlackItalic';
+    src: url(DGBFont/Calibre-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(DGBFont/Calibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'BlodItalic';
+    src: url(DGBFont/Calibre-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(DGBFont/Calibre-Light.ttf);
+}
+
+@font-face {
+    font-family: 'LightItalic';
+    src: url(DGBFont/Calibre-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(DGBFont/Calibre-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'MediumItalic';
+    src: url(DGBFont/Calibre-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(DGBFont/Calibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RegularItalic';
+    src: url(DGBFont/Calibre-RegularItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src: url(DGBFont/Calibre-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'SemiblodItalic';
+    src: url(DGBFont/Calibre-SemiboldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url(DGBFont/Calibre-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'ThinItalic';
+    src: url(DGBFont/Calibre-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: 'saysetth ot';
+    src: url(DGBFont/saysettha_ot.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Warnjai-Regular';
+    src: url(DGBFont/PB-Warnjai-Regular.otf) format('truetype');
+}
+
+.menu-item {
+    font-family: 'Warnjai-Regular' !important;
+}
+
+.warnjai-regular {
+    font-family: 'Warnjai-Regular' !important;
+}
+
+.swal2-title{
+    font-family: 'warnjai-regular' !important;
+    color: black;
+    
+}

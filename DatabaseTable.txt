@@ -1,0 +1,44 @@
+Database Table
+ - Store: ເອົາໄວ້ເກັບລາຍການສິນຄ້າ
+    name - ຊື່ສິນຄ້າ
+    image - ຮູບພາບ
+    amount - ຈຳນວນ
+    price_buy - ລາຄາຊື້
+    price_sell - ລາຄາຂາຍ
+ - Transection: ເອົາໄວ້ເກັບ ການເຄື່ອນໄຫວທຸລະກຳ (ເພີ່ມສິນຄ້າ, ຂາຍສິນຄ້າ)
+    tran_id - ລະຫັດ ການເຄື່ອນໄຫວ
+    product_id - ລະຫັດສິນຄ້າ
+    tran_type - ປະເພດທຸລະກຳ (ລາຍຮັບ - ລາຍຈ່າຍ)
+    amount - ຈຳນວນ
+    price - ລາຄາ
+    tran_detail - ລາຍລະອຽດທຸລະກຳ
+ - User: ເອົາໄວ້ເກັບ ຂໍ້ມູນຜູ້ໃຊ້
+    name 
+    email
+    password
+ - Bills: ເອົາໄວ້ເກັບ ຂໍ້ມູນໃບບີນ
+    bill_id - ລະຫັດໃບບີນ
+    customer_name - ຊື່ລູກຄ້າ
+    customer_tel - ເບີໂທລູກຄ້າ
+ - BillsList: ເອົາໄວ້ເກັບ ຂໍ້ມູນລາຍການໃບບີນ
+    bill_id - ລະຫັດໃບບິນ
+    name - ຊື່ລາຍການລູກຄ້າ
+    amount - ຈຳນວນ
+    price - ລາຄາສິນຄ້າ
+
+   - Compliance
+ຄຳສັ່ງ: php artisan make:model <ຊີ່> -m
+
+Controller ເພື່ອຈັດການ ຄຳນວນ, ເພີ່ມ, ແກ້ໄຂ, ອັບເດດ, ລົບ
+ - BillsController: ເອົາໄວ້ຈັດການຂໍ້ມູນ ກ່ຽວກັບໃບບີນ
+ - StoreComtroller: ເອົາໄວ້ຈັດການ ກັບຂໍ້ມູູນສິນຄ້າ
+ - TransectionController: ເອົາໄວ້ຈັດການ ການເຄື່ອນໄຫວ
+ - UserController: ເອົາໄວ້ຈັດການ ຂໍ້ມູນຜູ້ໃຊ້
+ - ReportController: ເອົາໄວ້ຈັດການ ຂໍ້ມູນລາຍງານ
+
+ - ComplianceController
+ 
+ຄຳສັ່ງ: php artisan make:controller API/BillsController
+
+
+ຄຳສັ່ງ: php artisan migrate
