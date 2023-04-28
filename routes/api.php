@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\StoreController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\TransectionController;
+use App\Http\Controllers\API\ComplianceController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -35,6 +36,14 @@ Route::group(['prefix'=>'store','middleware'=>'auth:sanctum'], function() {
 
 Route::group(['prefix'=>'transection','middleware'=>'auth:sanctum'], function() {
     Route::post("add", [TransectionController::class,"add"]);
+    // Route::get("/", [TransectionController::class,"index"]);
+    // Route::get("edit/{id}", [TransectionController::class,"edit"]);
+    // Route::post("update/{id}", [TransectionController::class,"update"]);
+    // Route::delete("delete/{id}", [TransectionController::class,"delete"]);
+});
+
+Route::group(['prefix'=>'compliance','middleware'=>'auth:sanctum'], function() {
+    Route::post("add", [ComplianceController::class,"add"]);
     // Route::get("/", [TransectionController::class,"index"]);
     // Route::get("edit/{id}", [TransectionController::class,"edit"]);
     // Route::post("update/{id}", [TransectionController::class,"update"]);
