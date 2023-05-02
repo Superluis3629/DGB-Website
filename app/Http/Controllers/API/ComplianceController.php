@@ -28,7 +28,7 @@ class ComplianceController extends Controller
                 $compliance->date_time = $request->date_time;
                 $compliance->place_of_the_event = $request->place_of_the_event;
                 $compliance->detail_of_event = $request->detail_of_event;
-                $compliance->image = $generate_new_name;
+                $compliance->the_attached_file = $generate_new_name;
                 $compliance->mention_anyone = $request->mention_anyone;
                 $compliance->feel_free = $request->feel_free;
                 $compliance->problem_happen = $request->problem_happen;
